@@ -1,0 +1,58 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<title>Heart Disease Prediction System</title>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="http://fonts.googleapis.com/css?family=Varela" rel="stylesheet" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/default.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/fonts.css') }}">
+	<link rel="icon" href="{{url_for('static',filename='/img/UEM_Logo.jpg')}}" type="image/icon type">
+
+
+</head>
+
+<body style="width: 100%;background-color: #006270">
+	<div id="wrapper">
+		<div id="header-wrapper">
+			<div id="header" class="container">
+				<div id="logo">
+					<h1 style="padding-left: 10px ;padding-top:4% " <a href="{{url_for('main_page')}}">Heart Disease Prediction System</a></h1>
+				</div>
+			</div>
+		</div>
+		<div id="banner">
+			<div class="container" >
+				<div class="title">
+					<span class="byline"></span> </div>
+				<ul class="actions">
+					<li ><a href="{{url_for('test_page')}}" class="button" style="background: #009394; border: 1px solid #009394;border-radius: 10px;padding: 4px;color: #FFFFFF;" >START PROCESS</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--recommendation intro-->
+	<div style="background-color: #006270">
+		<div id="page" class="container" style="background-color: #009394;height: 45%;">
+			<div class="container">
+				<h2 align="center" style="color: #ffffff; font-size: 3em;padding-left: 2em;">HOSPITAL NEAR
+					YOU</h1>
+					<h3 align="center" style="padding-top:1em;color:#FFFFFF">If there is any emergency & you need the
+						help of expert opinion, we recommend you to see this.
+				</h2>
+				<div>
+					<br><br>
+					<ul class="actions">
+						<li><a href="https://www.google.com/search?q=heart+hospital+recommendation+to+location&oq=heart+hospital+recommendation+to+location"
+								class="button" style="margin-bottom: 3%; background:#006270;border: 1px solid #009394;border-radius: 10px;padding: 4px;color: #FFFFFF;font-size: 1.5em;">Heart Speciality Near
+								You </a></li>
+					</ul>
+				</div>
+
+			</div>
+
+</body>
+
+</html>

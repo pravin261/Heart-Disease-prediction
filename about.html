@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            text-align: center;
+        }
+        .section{
+            min-height: 100vh;
+            background: #009394;
+            background-position: center;
+            background-size: cover;
+        }
+        .hero{
+            width: 80%;
+            margin: auto;
+            padding: 30px 0px;
+        }
+        article h1{
+            font-size: 50px;
+            font-weight: 500;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-transform: uppercase;
+            color: #181616;
+        }
+        article h1::after{
+            content:"";
+            height: 3px;
+            width: 225px;
+            background-color: #fff;
+            margin: auto;
+        }
+        img{
+            margin: auto;
+            display: block;
+            margin-top: 40px;
+            height: 220px;
+            border-radius: 50%;
+            border: 3px solid #bef4f7;
+        }
+        content{
+            font-size: 17px;
+            color: #ffffff;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 1.5;
+        }
+        article h5{
+            text-transform: uppercase;
+            font-size: 32px;
+            font-weight: 500;
+            margin-top: 30px;
+            color: #03252b;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        article p{
+            font-size: 18px;
+            color: #b3f812 ;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About us</title>
+</head>
+<body>
+    <div class="section">
+        <div class="hero">
+            <article>
+                <h1>About Us</h1>
+                <img src="data:image/png;base64,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">
+                <h5>PRAVIN</h5>
+                <p>Team Leader,Project Heart disease prediction</p>
+                <content>
+                    Im Pravin.A,Team leader of this specific project along with my friends.As charge of guiding,monitoring and leading an entire group.
+                    they are responsible for motivating their teammates as well as inspiring positive communication within them so that they can work
+                    together toward achieving goals.
+                </content>
+
+            </article>
+        </div>
+        <div class="hero">
+            <article>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMoAAAD5CAMAAABRVVqZAAAAhFBMVEX39/cAAAD////7+/vx8fHY2Nj29va+vr7t7e3i4uLz8/Ozs7Pn5+fPz8+ioqLb29t9fX1wcHBfX1+qqqqIiIhVVVXMzMw1NTWkpKTBwcGZmZlpaWmPj48+Pj5HR0cRERElJSUtLS0bGxuDg4NOTk5CQkJcXFwYGBgxMTF2dnYjIyM6OjpY7e0cAAAN60lEQVR4nO1d63aiMBDWhDuiVpSKUK2X2rV9//dbkAQSrgEmYM/h+7Pn2BXzMZnJ3JLMZhMmTJgwYcKfBn5i7FH0Q0QAIYSNlW/bDkZjD6cTEg6zhWeHwddp/sT38m9JhsjB9NxtcJ7n8On8BcEkFJBi+u72/i/PIcX2lQVDppKh2ofH7bOSA8X5FQVD5LBw7PCNqoMIXkkwCYVIpd0weBenkAlmNb5gEo1WVv7+uqlWBwGE4wkmkYOh6pE6/PThQPE+uGAw5RCpdBt1EMABDSSYhIJmxurwAUohhXTBJOpgxepwP8vhkEKWYMhUWunLNYw6CODLlCEYFKnD2xFWHQSwhBcMXg5NggBeMNgficp8vocWDFK7rNsguEELBqNwLC4SBGMex+JyM8AFsx+Ly9wFF8xiNxaX3QJcMHaf8Zw+dpvg8Viv149gs/u6tPqyDS4YZdOawWW3XtqOaaEC8GLlu+HbUYjUPdEYBEappWA2S89gxq4phqmqjuN5jqOqpmHNks8t1d7eGh8WC2YRHlQw8SDlTZDH2tPI2ze9KA7YfZTE9p+/u0doe2YcePpND94oWI3+McG4YOQJeGMnF6PICZ05y7ezCO/z21JF+NDwv7SYig6oNVhbN40sjIigmR6IsMgQ+It6XVSgqUSzzKlNBJ0cNENWJwfhUPstCVSiAKbmJy8GnnW22z91i1dCBdpdRqtKF3MRRf0tp5YgnlTgvTKMKpTURzMsyWFLqEiIY8pdzCDSE1F73ZGKhMi/1MU0MdYlMcmozN9VcMEUXMxIKFhaJiOjIiG7XPBkHIlC4ahIqMcghbVWn5GmyLFeBSqRa6SBC4YRQxjNL3lZphyV+ckHT8nMHvTh0fwypTEpUJnP3yzwWeYRVccz3Cs+a0slXvyhZ9nsGj93E6lKo68JSyXy/WGpxMmyc+xTzFBzyRGWyvwInlyOk2VRiGfIY1JB5U1CnhypltysLE/l+yvYLnVnIaV6ET0UbaVTed+tD1EQbTwrJRLbY5C0LObpGDwDYl8ygxQWNIOfYzKN4uwTlhBFVgI7UBQ+HltXV02NnUaDUkFgZaX9kwA/7GGptE9fVmBTYmKHnWDfUFROJSMekgqkL7kqDnlQKoC+pD0uFUhf8lFUlkGp9Oo54nEel0q1L3l5v22C9TY8HJZPHA7hdh1sbu/V1RWjMOYBqRR9yY/79ekvJStdGbBmmJ6+3G4KnT/FMQ9IhamJn+6h7SR1oqaOaEzasZCi2uEmk9K2MMPwav7Mfg4A9BUP4d/b/lnsShmkY2VcEO4TyvT5oeHsH7/xc34LY9aeeWq4WlENLFqyw9nI4p5cR3cPkWbsjh//Pn++TxG+fz7fP467SHsOtu6YCiGVfk1xlsE8H+k+hTKfu0NQiTUCpyQ01d9fRXtB34Pr3le1lFD8JC1PxXv+1+VQ/YgxCcVxt7tO6dbv3dV1MrnmHm1X6JAcGpZo9bEO52DpKUU6xECGA1DBzhWwl/J3XfDCkrgOrtxdDehsceH1J4kp+USiXwJuglnnqSTpaPAUXhmVPimKwMOznDN6L1B5fjzEuoI6N/PtXCNScox+uU9veSrK8+MhdAV3yrH+bn2NLiZ8uJNf7kkRahAL1nop2YU+a3Qx71n/y42ZmJXTEFTaSOVr7aqFnih+iuYjlsTFm88t+VTQWYjEZbe1VSt1ubgncOY8T4XmQAbQe9S0QB7fDrajoFIWyRO4fpO8rtDMpzcAlS92ICEy9G1wOx5vm0cUf/krBdWQSIDdGirEMS5NYAAjF0MumJhENF+dK5TzASNxjONeCkkMUuSWlS7KmY62TFlSkRW8AGikQiFrfqdnqNwj5j4rlrQ/aCebCrU+Jlqc43+7TGi8iL/5pSBCKWAHnXYB5dcbcCQO0txFZECdfu+5Rlo4lQD7N5R2vebDS2DQuRGryLM00e3VxQYKZes+62+hNBkjp/yYgihlUkvQSpOLAkBRlJ/0RiciYFMSWmoOJDuU6MoYSmQX3Vqxp9zJOMliec2ekkzbJyRn9UiRiNgcpHdckhfEKyFOMhOyMLXBvVy9J14LlX3nCi79fjJwZsFnIgDJORfSEGIAPY4UnS7ZoJm200AuFWKLwQJvYsIy4RJlfC48g1ABiyWU/MISWQSKi2RjLJ0KE/jLTboATzBqerP3jzMmkoMvshYXS1XdQIOT7HEKQ0Vu8EVc/JISdScQY5z5DGngFUNu8EU8Daj3RYIwxlYxW5nXklf7pKsVqo5DmmXYFQTN/MN1fT3oimQnnzhNUPk20gHAr+tJgC0/sk/8irIumy4o8YwHA4lXwFavIUxVFSxIk0/tFZRL1w5kNYaxkySQ6xa/9QZx92C6fkn0U9KyMwRoOg5EKtoQS2E1iLL4AD9Pw6xxVCWdFIWyW5dHJTk96bm7KtBX2T8fQvOto6wqT5AJ3n/nAs0+D1ELrhgB6cff9vMtEG1blJ7mrkZaSty43fUVGy4t/0tOQtYiK1p1XxCyputB2nIqgc9kGD2WabqB72fcAwKzUK/r5MieMESnQR0QLVt1XafT/Qne6CcdIjMxpF0TiCROOUs56KztWIgr1i0hRnNG9gswSTOk3VZqmhge0w5nIFOk2For9OUTkMMAAlqTdjq8WBoouK9BhaYRu3jItLVkPOeLB3Wh2i8MtPQ/ovPFg24tah9t0D0jg7SqC4EkKlvHk/TUDhmbgjuCesinbl8DqwZAgAYu7eY87e0dojdSHBZxb9skFxEx4t+S2z5aIu1CUoS5pC4xRMYGElTzv0THhZXvFzPEGS7trBEmzYrnF5PJjJkvYmFtWsl+nSUlQ3qCkIhBSptywc8xA0Gas7g2DQ9jKpPB9j61BFX9+VtDR65FWyXHzbHUIc0DfdQdfotU2n03UglCCFlOq/I4H+a4tFdmwjShzoPyCjVzVlqjSo0M5liXg1YYK9KyHnz5Ld19gZgu+4PFTjOMMHMU32taYR6IPQ5l7WCU3BiFkMnsivh8gatKBICVO0Pm+8311JVjb9kNIsHsBdf4MmDEbeUo4jXyd2JAdSfiBtAnrssFRl7FqRXv3lB3rYABI/urSOQIfhIeNEpvgcNI3XJb9H62aikR2e1ebYDU8sxkZIEXdhjcfn9vQagvKjq70OllbsTCs7A6YcweSVHxP7xIXv4rzDuM9NjR7VFWfUZht/K5NyAQ8nsmsNO83s4foLWwchRI2ad6nSsrVM/+3F+Ys9I+l4uGbZRSEOkA9tlds+98/6ZX/o6jr5l8ZzJ/Ame8eX1Q2USqbOj5Q7I5xY/ils/Q0cgBNHhGPEpsunc+TsltjIy15qDiYYQTDUjzwpLVj98HmARYx/VSd8yFYRgL1aeHAnGGG92LT4pcUFu2cOL36hyqLrZg8/F1B3CwnJn9XDn823rShBM9eLWvOwSQDQtxjW+8ZynXXl4Q2FXLai8eM3/dcOYB16NSfbImV4RpPKH6tl+AksHIeTT8ZAw2JV8dsrDBitAJ6PfIGELxsNyzwC/mapFVJyRwRhs1XygT47RUIESDDPEbPNhUdtXhwGwxCZceV1yKsHe8VnvDRwHr5jfOW2KRaUtx6GXOuGPkRcA6YuWvnF3qcbsDqk893Of2F3sdmt45t9K3vp1u03WWdbkdhn1tZS+dK1Vqxb83oVMiEOM2E5mC69UrvnVeag0pplJ06APGxm/zc4vgu0Hzr50/HBe3u3+N4Ga1bdlYNT+0FNzO+Px752TW9aTaS7vqJRI3+DnwYQt/hCu/qVnwlKEStMk3o0IQIQ5OLLxj4kEIJYb4DTl9mPDawi/5PJU+V+mIdp7hrnqSgFUIvK/6SyfzlUFMX6qjITF8V4YjXEDT70dOIn1XWDv3+xX2TAw+mGRyZVV3hAnjXUAopcF2O2SeGH8EYhYEtPS+ytDcbQ5xa2/mICMuSMwsAsSdZk1lWZgrSDIDw39OP4a5vaG+jQ4rzU8QAO3lzp+iT3W1+3mVHGpdGKiTSkn8nn/7RFpQNxzXbSrvaewZGGUnZBJPoK+1z1BdnoX7DfLC8teAJJspAA+prVxdIA/Cfb6w/N0Gz54pONFXW2TYa/niF5a/0STuq4S9nK2iGxbu/pEY8XqYt1SxZUMlmfPu+Cyvbvb1JXKIlrC8o/WNQJZgFmUdi0BLCgMHFR5p9YofSlGyxYw5wgoIJ6ugFgv4q9lKbm+AM8Qp7gX/RBXLEbdCwSBLuV+wcLBupyxOA/JiAfC6R0NOW6ANy5DIefsSr3qVjvyGBllXVcvHLq/2GEswLkOgwCTmAnyrwjAoj1mwrEvEJaKq4envmbHqVEXbet3YqGvyRSvA29Nk41Kf0cdY4gXJsAga7yJHMi/jBYTIDn1s/QFLdlyIlViQdx57qA1whYurGO7yVxlo19SPjJdV/39tm/oxMl9SZS52h+6QiMzref7Ljj07EZmXmmanZXEjXAsyBnB2rDvOdul+jBZASH+FSGYHsoMHo1XYqR0FDKetCdULGjetd+lDgsFGnwE3tWJ9DIN2dEE6QAtsZvoDNNvfBOgmY55NTSM7MIIh+vItfwtT4q3EoLslFD+UlDnbhZ42+B4WTXXXoHx+y278G4hOzMfUD6J3D1fjcg/tVfmNfwPzQdrK36835/YcTsfHwVYVPDYLBsn+R2yovn3YBruPevfg83h/hEvdW1jNN/6NhvRKv/ju95Xq+bpuU+i+76xM00j/y4tyKAJXYOxxTZgwYcKECRMmTJgwYcKECRMmTJjwl/EfsNbGTQn07jIAAAAASUVORK5CYII=">
+                <h5>RAMJI</h5>
+                <p>Team member,Project Heart disease prediction</p>
+                <content>
+                    Im Ramji.S,Team member of this specific project along with my friends.As charge of developing and maintaining the backend.
+                    they are responsible for motivating their teammates as well as inspiring positive communication within them so that they can work
+                    together toward achieving goals.
+                </content>
+               
+            </article>
+        </div>
+        <div class="hero">
+            <article>
+                <img src="data:image/png;base64,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">
+                <h5>SARAVANAN</h5>
+                <p>Team member,Project Heart disease prediction</p>
+                <content>
+                    Im Saravanan.M,Team member of this specific project along with my friends.As charge of developing and designing of landing webpage.
+                    they are responsible for motivating their teammates as well as inspiring positive communication within them so that they can work
+                    together toward achieving goals.
+                </content>
+               
+            </article>
+        </div>
+        <div class="hero">
+            <article>
+                <img src="data:image/png;base64,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">
+                <h5>SAKTHIGANESH</h5>
+                <p>Team member,Project Heart disease prediction</p>
+                <content>
+                    Im Sakthiganesh.M,Team member of this specific project along with my friends.As charge of developing and designing of UI and documentation process.
+                    they are responsible for motivating their teammates as well as inspiring positive communication within them so that they can work
+                    together toward achieving goals.
+                </content>
+              
+            </article>
+        </div>
+    </div>
+
+</body>
+</html>
